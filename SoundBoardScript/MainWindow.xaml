@@ -5,8 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SoundBoardScript"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="650" Width="850">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Button Name="StopMusic" Click="StopMusic_OnClick" Content="Stop Current Music" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="110"/>
+        <Button Name="ImportScript" Click="ImportScript_OnClick" Content="Import a .script File" Grid.Column="1" HorizontalAlignment="Left" Margin="717,10,0,0" VerticalAlignment="Top" Width="115"/>
+        <RichTextBox IsReadOnly="True" IsDocumentEnabled="True" Name="ScriptBox" Grid.Column="1" HorizontalAlignment="Left" Height="569" Margin="10,10,0,0" VerticalAlignment="Top" Width="822" Grid.Row="1"/>
     </Grid>
 </Window>
