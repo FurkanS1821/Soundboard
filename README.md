@@ -1,5 +1,5 @@
 # Soundboard
-A soundboard built into a RichTextbox to be used for things like Theatre to merge tracking the play and playing sounds together in one single program.
+A soundboard built into a RichTextbox so it can be used to both read the script of a theatre play and play music and/or sound effects from buttons integrated to the script itself!
 
 ## How to use?
 
@@ -9,14 +9,14 @@ A soundboard built into a RichTextbox to be used for things like Theatre to merg
 
 ### Known issues
 
-- Because the program loads the file in when the mouse is hovered over a button to gain time when it is clicked on, it will cause a crash if the file is not found in where it should have been. This is technically your issue, but I thought some of you may be like "wow i hovered on a button and it crashed 11/10 perfect program" and wrote it here. So, check it out!
+- Because the program loads sound files when the mouse is hovered over a button so that sound is not delayed on press, it will cause a crash if the file is not found at where it should have been. This is technically not my fault but yours, but I thought some of you may create an issue called "hover over button to crash" to me. So, before opening an issue, check if file exists, check if the path in the script is correct and the file integrity.
 
 ### Anything you recommend?
 
 - I highly recommend keeping sound files in the same directory as the executable.
 
 ### Frequently Asked Questions
-#### What the hell is a .script file?
+#### What is a .script file?
 
 It is just plain text file, where buttons are inserted into the text using the following format:
 
@@ -40,11 +40,4 @@ Yes.
 
 #### Why don't you just add a window to do that with a UI?
 
-Yes.
-
-#### "Yes" is not an answer to this question.
-
-Oh, I was looking away. Answer for the last question is, I am a lazy person.
-
-Also, manually creating that file is not very hard either. (I tried :D)
-
+It's not worth the effort. Anyone *should be able to* create the file in a text editor. I doubt anyone will ever use this program anyways. Except for me, where I used this for a silly theater play in high school half a decade ago. I still live its trauma to this day, despite not even being on the stage.
